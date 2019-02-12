@@ -16,6 +16,6 @@ public class Solution {
         a[4]=x+y+z;
         Integer [] str = {a[0],a[1],a[2],a[3],a[4]};
         int max = Collections.max(Arrays.asList(str));
-        System.out.println(max); 
+        System.out.println(max);
     }
 }
