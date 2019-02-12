@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n,i,j,c=0;
+        n = sc.nextInt();
+        while(n>0){
+            n--;
+            i = sc.nextInt();
+            j = sc.nextInt();
+            if(j-i >= 2)
+                c++;
+        }
+        System.out.println(c);
+       
+    }
+}
