@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static String stringSort(String s){
+        char ar[] = s.toCharArray();
+        Arrays.sort(ar);
+        return new String(ar);
+    }
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        String x=sc.nextLine();
+        String y=sc.nextLine();
+        String str = sc.nextLine();
+        String str2 = x+y;
+        str2 = stringSort(str2);
+        str = stringSort(str);
+        if(str2.equals(str))
+            System.out.println("YES");
+        else
+            System.out.println("NO");
+    }
+}
